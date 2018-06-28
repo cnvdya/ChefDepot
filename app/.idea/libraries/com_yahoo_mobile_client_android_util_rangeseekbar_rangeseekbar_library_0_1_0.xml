@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.yahoo.mobile.client.android.util.rangeseekbar:rangeseekbar-library-0.1.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/rangeseekbar-library-0.1.0.aar/f86bd081177052d53c7cebaac7106fe0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/rangeseekbar-library-0.1.0.aar/f86bd081177052d53c7cebaac7106fe0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yahoo.mobile.client.android.util.rangeseekbar/rangeseekbar-library/0.1.0/a40ad8f0481d2387494025faaf64d20426c394c/rangeseekbar-library-0.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

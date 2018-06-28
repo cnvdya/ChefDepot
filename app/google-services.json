@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "726790770496",
+    "firebase_url": "https://food-depot.firebaseio.com",
+    "project_id": "food-depot",
+    "storage_bucket": "food-depot.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726790770496:android:56f808ff5295f1fb",
+        "android_client_info": {
+          "package_name": "com.fooddepot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "726790770496-gim0a96jv0uelehbv81lb69qhkllufph.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkfmZqWVcYDsbilTmQfJvL4nQE8y6DZmw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

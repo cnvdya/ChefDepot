@@ -1,0 +1,266 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.fooddepot.activity.FilterFragment">
+
+
+
+
+    <TextView
+        android:id="@+id/choose_cat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:textSize="18sp"
+        android:textColor="#f4cd64"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:text="Choose category"
+        />
+
+
+    <RadioGroup
+        android:id="@+id/foodcategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/choose_cat"
+        app:layout_constraintTop_toBottomOf="@id/choose_cat">
+
+        <RadioButton
+            android:id="@+id/veg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Veg"
+            />
+
+        <RadioButton
+            android:id="@+id/nonveg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf = "@id/veg"
+            android:layout_toEndOf="@id/veg"
+            android:layout_weight="1"
+            android:text="Non-veg" />
+
+        <RadioButton
+            android:id="@+id/vegan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Vegan" />
+
+        <RadioButton
+            android:id="@+id/halal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Halal" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/radioGroup2"
+        android:layout_below="@+id/foodcategory"
+        android:layout_marginTop="12dp"
+        android:text="Filter Results By Distance"
+        android:textColor="#f4cd64"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/distance"
+        app:layout_constraintTop_toBottomOf="@id/distance"
+        android:id="@+id/radioGroup2">
+
+        <RadioButton
+            android:id="@+id/onemile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_weight="1"
+            android:text="1 mile" />
+
+        <RadioButton
+            android:id="@+id/fivemile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf = "@id/onemile"
+            android:layout_toEndOf="@id/veg"
+            android:layout_weight="1"
+            android:text="5 mile" />
+
+        <RadioButton
+            android:id="@+id/tenmile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="10 mile" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/datefilter"
+        android:layout_below="@+id/rangeSeekBar"
+        android:layout_marginTop="11dp"
+        android:text="Filter Results By Date"
+        android:textColor="#f4cd64"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/datefilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+
+        android:layout_below="@+id/date"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Today" />
+
+        <RadioButton
+            android:id="@+id/tomorrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tomorrow" />
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/pricerange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/radioGroup2"
+        android:layout_below="@+id/radioGroup2"
+        android:layout_marginTop="13dp"
+        android:text="Filter Results By Price range"
+        android:textColor="#f4cd64"
+        android:textSize="18sp" />
+
+
+    <com.yahoo.mobile.client.android.util.rangeseekbar.RangeSeekBar
+        xmlns:rsb="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rangeSeekBar"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_width="400dp"
+        rsb:thumbTint="#000"
+        rsb:activeColor = "#f0f"
+
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/pricerange"
+        android:layout_centerHorizontal="true">
+
+    </com.yahoo.mobile.client.android.util.rangeseekbar.RangeSeekBar>
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/datefilter"
+        android:layout_below="@+id/datefilter"
+        android:layout_marginTop="12dp"
+        android:text="Choose rating"
+        android:textColor="#f4cd64"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/chefrating5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/pricerange"
+        android:layout_below="@+id/rating"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="11dp"
+        android:checked="true"
+        android:textColor="#444"
+        android:textStyle="bold|italic" />
+
+    <CheckBox
+        android:id="@+id/chefrating4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/chefrating5"
+        android:layout_below="@+id/chefrating5"
+        android:checked="false"
+        android:textColor="#444"
+        android:textStyle="bold|italic" />
+
+    <CheckBox
+        android:id="@+id/chefrating3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/chefrating4"
+        android:layout_below="@+id/chefrating4"
+        android:checked="false"
+        android:textColor="#444"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/chefrating4"
+        android:layout_alignStart="@+id/imageView3"
+        android:src="@drawable/fivestar" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_below="@+id/imageView"
+        android:src="@drawable/fourstar" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/pricerange"
+        android:layout_below="@+id/imageView3"
+        android:src="@drawable/threestar" />
+
+
+
+
+
+    <Button
+        android:id="@+id/applybutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView2"
+        android:background="#f4cd64"
+        android:layout_marginTop="30dp"
+        android:text="Apply"
+        android:textColor="#fff" />
+
+
+</RelativeLayout>

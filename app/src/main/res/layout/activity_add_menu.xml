@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/TopTheme"
+    tools:context="com.fooddepot.activity.cook.AddMenuActivity">
+
+
+        <RelativeLayout
+            android:id="@+id/menuRL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:layout_below="@+id/toolbar">
+
+
+
+        <TextView
+            android:id="@+id/itemName_txtvw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Item Name"
+            android:textColor="@color/textColor"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/itemName_edtxt"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/itemName_txtvw"
+            android:layout_marginLeft="50dp"
+            android:layout_toEndOf="@+id/itemName_txtvw"
+            android:background="@drawable/edittextbg"
+            android:hint="  Pizza" />
+
+
+        <TextView
+            android:id="@+id/itemCategory_txtvw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemName_txtvw"
+            android:layout_marginTop="20dp"
+            android:text="Cuisine"
+            android:textColor="@color/textColor"
+            android:textStyle="normal" />
+
+        <Spinner
+            android:id="@+id/cuisine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/itemCategory_txtvw"
+            android:layout_alignRight="@+id/itemName_edtxt"
+            android:entries="@array/cuisine" />
+
+
+        <TextView
+            android:id="@+id/price_txtvw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemCategory_txtvw"
+            android:layout_marginTop="20dp"
+            android:text="Price/Unit($)"
+            android:textColor="@color/textColor"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/price_edtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/price_txtvw"
+            android:layout_alignLeft="@+id/itemName_edtxt"
+            android:layout_alignRight="@+id/itemName_edtxt"
+            android:background="@drawable/edittextbg"
+            android:hint="  14.99" />
+
+        <TextView
+            android:id="@+id/qnty_txtvw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/price_txtvw"
+            android:layout_marginTop="20dp"
+            android:text="Quantity"
+            android:textColor="@color/textColor"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/qnty_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/qnty_txtvw"
+            android:layout_alignLeft="@+id/itemName_edtxt"
+            android:onClick="selectqnty"
+            android:text="Select"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <Button
+            android:id="@+id/photo_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/itemName_edtxt"
+            android:layout_below="@+id/qnty_txtvw"
+            android:layout_marginTop="20dp"
+            android:text="Upload Picture"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+
+        <TextView
+            android:id="@+id/classification_txtvw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/qnty_txtvw"
+            android:layout_marginTop="10dp"
+            android:text="Category"
+            android:textColor="@color/textColor"
+            android:textStyle="normal" />
+
+        <Spinner
+            android:id="@+id/category_spn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/itemName_txtvw"
+            android:layout_below="@+id/classification_txtvw"
+            android:entries="@array/category" />
+
+
+        <TextView
+            android:id="@+id/date_txtvw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/category_spn"
+            android:layout_marginTop="30dp"
+            android:text="Available From"
+            android:textColor="@color/textColor"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/date_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/date_txtvw"
+            android:layout_alignLeft="@+id/itemName_edtxt"
+            android:onClick="showCalendar"
+            android:text="Date"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <Button
+            android:id="@+id/time_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/date_txtvw"
+            android:layout_alignRight="@+id/itemName_edtxt"
+            android:onClick="showClock"
+            android:text="Time"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <TextView
+            android:id="@+id/availibilityFrom_txtvw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date_txtvw"
+            android:layout_marginTop="20dp"
+            android:text="Available Till"
+            android:textColor="@color/textColor"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/datetil_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/availibilityFrom_txtvw"
+            android:layout_alignLeft="@+id/itemName_edtxt"
+            android:onClick="showCalendarTil"
+            android:text="Date"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <Button
+            android:id="@+id/timetil_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/availibilityFrom_txtvw"
+            android:layout_alignRight="@+id/itemName_edtxt"
+            android:onClick="showClockTil"
+            android:text="Time"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <TextView
+            android:id="@+id/itmDsc_txtvw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/availibilityFrom_txtvw"
+            android:layout_marginTop="20dp"
+            android:text="Item Description"
+            android:textColor="@color/textColor"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/itmDsc_edtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/itemName_txtvw"
+            android:layout_alignRight="@+id/itemName_edtxt"
+            android:layout_below="@+id/itmDsc_txtvw"
+            android:background="@drawable/edittextbg" />
+
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/itemName_txtvw"
+            android:layout_below="@+id/itmDsc_edtxt"
+            android:layout_marginTop="20dp"
+            android:background="@color/viewListbtn"
+            android:text=" Cancel "
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/cancel_btn"
+            android:layout_alignRight="@+id/itemName_edtxt"
+            android:background="@color/savebtn"
+            android:text="Save"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+            android:textColor="@android:color/background_light"
+            android:onClick="onSave"/>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+<!--</android.support.constraint.ConstraintLayout>-->

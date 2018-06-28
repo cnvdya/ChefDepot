@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <color name="colorPrimary">#a31a05</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#9776d1</color>
+    <color name="colorLogo">#50e1dedb</color>
+    <color name="shadow_lighter_color">#37000000</color>
+    <color name="translucent_white">#4ff9f5f5</color>
+    <color name="colorToolbar">#871503</color>
+    <color name="textColor">#311801</color>
+    <color name="edittextColor">#bfded9d9</color>
+    <color name="borderColor">#d2d1cf</color>
+    <color name="savebtn">#49c909</color>
+    <color name="viewListbtn">#e69914</color>
+    <color name="orderList">#dc6007</color>
+    <color name="duskYellow">#eac718</color>
+    <color name="lightGrey">#ccc9c7</color>
+
+</resources>

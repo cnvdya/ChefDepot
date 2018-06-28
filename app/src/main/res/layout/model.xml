@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/artichokes" />
+
+    <TextView
+        android:id="@+id/nameTxt"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:text="Rory's Kitchen"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/itemTxt"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@+id/nameTxt"
+        android:text="Pizza"
+        android:textColor="@color/orderList" />
+
+    <TextView
+        android:id="@+id/itemPriceTxt"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/nameTxt"
+        android:text="$10"
+        android:textColor="@color/orderList" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemTxt"
+        android:drawableLeft="@drawable/ic_place_red_18dp"
+        android:drawablePadding="5dp"
+        android:paddingLeft="100dp"
+        android:text="3932 Rivermark Plaza, Santa Clara, CA 95054" />
+
+    <TextView
+        android:id="@+id/distancetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address"
+        android:paddingLeft="125dp"
+        android:text="0.5 miles" />
+
+    <RatingBar
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:theme="@style/RatingBar"
+        android:isIndicator="true"
+        style="?android:attr/ratingBarStyleSmall"/>
+
+    <TextView
+        android:id="@+id/reviewCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rating"
+        android:text="(10)"
+        android:textSize="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/distancetext"
+        android:layout_toRightOf="@+id/rating"/>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/rating"-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:layout_alignLeft="@+id/nameTxt"-->
+        <!--android:layout_below="@+id/distancetext"-->
+        <!--android:src="@drawable/fourstar" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/locationicon"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:layout_alignTop="@+id/nameTxt"-->
+        <!--android:layout_marginStart="2dp"-->
+        <!--android:layout_toEndOf="@+id/imageView"-->
+        <!--android:src="@drawable/cardistanceicon" />-->
+
+
+
+
+
+</RelativeLayout>

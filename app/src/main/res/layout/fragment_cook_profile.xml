@@ -1,0 +1,213 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fooddepot.activity.cook.CookProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/profile_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/profile_pic"/>
+
+            <Button
+                android:id="@+id/profilepic_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/profile_img"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Upload Your Picture"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+
+
+            <TextView
+                android:id="@+id/nickName_txtvw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/profilepic_btn"
+                android:textColor="@color/textColor"
+                android:text="Nick Name"
+                android:textStyle="normal"
+                />
+
+            <EditText
+                android:id="@+id/nickName_edtxt"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toEndOf="@+id/nickName_txtvw"
+                android:layout_alignBaseline="@+id/nickName_txtvw"
+                android:hint="  Eg. Master Chef Monica"
+                android:background="@drawable/edittextbg"
+                android:textStyle="normal"
+                android:textSize="18sp"
+               />
+
+            <TextView
+                android:id="@+id/nkdsc_txtvw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(This will appear in search results for customers)"
+                android:layout_alignLeft="@+id/nickName_edtxt"
+                android:layout_below="@+id/nickName_edtxt"
+                android:textColor="@color/textColor"
+                />
+
+            <TextView
+                android:id="@+id/adrsline1_txtvw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/nkdsc_txtvw"
+                android:layout_alignLeft="@+id/nickName_txtvw"
+                android:text="Address Line1"
+                android:textColor="@color/textColor"
+                android:textStyle="normal"/>
+
+            <EditText
+                android:id="@+id/adrsline1_edtxt"
+                android:layout_width="wrap_content"
+                android:layout_alignBaseline="@id/adrsline1_txtvw"
+                android:layout_alignRight="@+id/nickName_edtxt"
+                android:layout_alignLeft="@+id/nickName_edtxt"
+                android:layout_height="wrap_content"
+                android:hint="  Street, Apartment name"
+                android:background="@drawable/edittextbg" />
+
+            <TextView
+                android:id="@+id/adrsline2_txtvw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/adrsline1_txtvw"
+                android:layout_alignLeft="@+id/nickName_txtvw"
+                android:text="Address Line2"
+                android:textColor="@color/textColor"
+                android:textStyle="normal"/>
+
+            <EditText
+                android:id="@+id/adrsline2_edtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/adrsline2_txtvw"
+                android:layout_alignLeft="@+id/nickName_edtxt"
+                android:layout_alignRight="@+id/nickName_edtxt"
+                android:hint="  Apartment Number"
+                android:background="@drawable/edittextbg" />
+
+            <TextView
+                android:id="@+id/state_txtvw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/adrsline2_txtvw"
+                android:layout_alignLeft="@+id/nickName_txtvw"
+                android:text="State"
+                android:textColor="@color/textColor"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/cntry_txtvw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_alignBaseline="@+id/state_txtvw"
+                android:layout_toEndOf="@+id/state_txtvw"
+                android:layout_marginLeft="80dp"
+                android:text="Country"
+                android:textColor="@color/textColor"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/zip_txtvw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_alignBaseline="@+id/state_txtvw"
+                android:layout_alignRight="@+id/nickName_edtxt"
+                android:text="Zip Code"
+                android:textColor="@color/textColor"
+                android:textStyle="normal"/>
+
+            <EditText
+                android:id="@+id/state_edtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/state_txtvw"
+                android:layout_alignLeft="@+id/nickName_txtvw"
+                android:layout_alignRight="@+id/nickName_txtvw"
+                android:hint=" State"
+                android:background="@drawable/edittextbg" />
+
+
+
+            <EditText
+                android:id="@+id/cntry_edtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/state_edtxt"
+                android:layout_alignLeft="@+id/cntry_txtvw"
+                android:hint=" Country"
+                android:background="@drawable/edittextbg" />
+
+
+
+            <EditText
+                android:id="@+id/zip_edtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_alignBaseline="@id/state_edtxt"
+                android:layout_alignRight="@+id/nickName_edtxt"
+                android:hint=" Zip Code"
+                android:background="@drawable/edittextbg" />
+
+            <TextView
+                android:id="@+id/decs_txtvw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/state_edtxt"
+                android:layout_alignLeft="@+id/nickName_txtvw"
+                android:text="Description"
+                android:textColor="@color/textColor"
+                android:textStyle="normal"/>
+
+            <EditText
+                android:id="@+id/desc_edtxt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/decs_txtvw"
+                android:layout_alignRight="@+id/nickName_edtxt"
+                android:hint=" (Anything else you want your customers to know about you) Eg. I am expert in cooking italian dishes... "
+                android:background="@drawable/edittextbg" />
+
+            <Button
+                android:id="@+id/saveProfile_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/desc_edtxt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="  Save  "
+                android:background="@color/savebtn"
+                android:textColor="@android:color/background_light"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

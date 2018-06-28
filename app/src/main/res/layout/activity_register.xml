@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    android:background="@drawable/chefdepot_bkgrnd">
+
+    <EditText
+        android:id="@+id/name_editxt"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/translucent_bg"
+        android:drawableLeft="@drawable/ic_person_black"
+        android:drawableTint="@color/translucent_white"
+        android:drawablePadding="5dp"
+        android:drawableStart="@drawable/ic_person_black"
+        android:ellipsize="end"
+        android:hint="Name"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@color/translucent_white" />
+
+    <EditText
+        android:id="@+id/phone_editxt"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/name_editxt"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_call_black"
+        android:background="@drawable/translucent_bg"
+        android:drawableTint="@color/translucent_white"
+        android:textColor="@android:color/background_light"
+        android:drawablePadding="5dp"
+        android:drawableStart="@drawable/ic_call_black"
+        android:textColorHint="@color/translucent_white"
+        android:hint="Contact Number"/>
+
+    <Button
+        android:id="@+id/verification_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone_editxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/background_light"
+        android:text="  Get Verification Code  "
+        android:onClick="getVerificationCode"/>
+
+
+</RelativeLayout>

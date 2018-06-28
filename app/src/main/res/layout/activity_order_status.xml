@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_qr_id"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.fooddepot.activity.order.OrderStatusActivity">
+
+    <ImageView
+        android:id="@+id/qrCode"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+         />
+
+    <TextView
+        android:id="@+id/confirmationMessage"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qrCode"
+        android:drawableLeft="@drawable/ic_done_black_24dp"
+        android:text="Your order has been placed successfully"
+        android:drawablePadding="5dp"
+        android:textColor="#FF16D12D"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/paymentID"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/confirmationMessage"
+        android:text="Payment ID: cdsjcndcjnelnfdkfrjdlq"
+        android:textColor="@color/viewListbtn"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/paymentID"
+        android:text="Item Name"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/itemQuantity"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/itemName"
+        android:text="Quantity"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/itemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/itemName"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="$9"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/orderStatus"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemName"
+        android:text="Status: Ordered"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/orderDateTime"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orderStatus"
+        android:text="Date and Time"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/itemSeller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Nick Name"
+        android:layout_below="@+id/orderDateTime"/>
+
+
+
+    <TextView
+        android:id="@+id/contactNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/itemPrice"
+        android:layout_below="@+id/orderDateTime"
+        android:drawablePadding="5dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_call_black"
+        android:text=" +34 933 537 107"
+        android:textStyle="bold" />
+
+
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemSeller"
+        android:layout_alignLeft="@+id/itemName"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_directions_black_24dp"
+        android:drawablePadding="5dp"
+        android:text="3932 Rivermark Plaza, Santa Clara, CA 95054" />
+
+    <RatingBar
+        android:id="@+id/ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:theme="@style/RatingBar"/>
+
+    <Button
+        android:id="@+id/shareBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:drawableLeft="@drawable/ic_share_black_24dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white"
+        android:text="Share"/>
+
+
+
+
+</RelativeLayout>
