@@ -19,7 +19,7 @@ VIII.	Available globally.
 ![alt text](screenshots/architecture.png "this is the architecture")
             
 ## Order-Pay Screens
-![alt text](screenshots/order-pay.png "this is the home page")
+![alt text](screenshots/Order-pay.png "this is the home page")
 
 ## Search/View orders Screen 
 ![alt text](screenshots/cook-order.png "this is login window")
