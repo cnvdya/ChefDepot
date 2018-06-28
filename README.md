@@ -3,16 +3,14 @@ Chef-depot App - Home-prepared food ordering system that can be used by individu
 
 
 ## Features :
-I.	Sign in using phone number as cook/consumer.
-II.	Free to download and use, available in Google Play stores.
-III.	Listing of cooks and dishes around user’s location.
-IV.	Payment through PayPal.
-V.	Scan QR code and verify your identity.
-VI.	Share QR code with others.
-VII.	Easy-to use User interface.
-VIII.	Available globally.
-
-
+   • Sign in using phone number as cook/consumer.
+   • Free to download and use, available in Google Play stores.
+   • Listing of cooks and dishes around user’s location.
+   • Payment through PayPal.
+   • Scan QR code and verify your identity.
+   • Share QR code with others.
+   • Easy-to use User interface.
+   • Available globally.
 
 
 ## Architecture
